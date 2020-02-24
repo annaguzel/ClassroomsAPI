@@ -26,6 +26,8 @@ SECRET_KEY = '8nh94bkm13c^o_o4ou8hb8$c)qpet%xb7h^lm8nlxs)&%l47vg'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+REST_FRAMEWORK = {'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework_simplejwt.authentication.JWTAuthentication',)
+    }
 
 
 # Application definition
